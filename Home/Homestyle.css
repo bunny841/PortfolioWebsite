@@ -1,0 +1,47 @@
+body{
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #999;
+  overflow: hidden;
+}
+#navbar ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#Logo{
+  height: 7vh;
+}
+
+
+#navbar a {
+  display: flex ;
+  padding: 0 15px 0 15px;
+}
+
+.navicons{
+  height: 45px;
+  width: 45px;
+  
+}
+
+#banner{
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#welcome{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
