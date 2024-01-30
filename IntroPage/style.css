@@ -3,7 +3,7 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background: linear-gradient(45deg, #b5dcfa, #57bbfd, #3baafe, #07a5e9);
   }
  
 .intro{
@@ -12,12 +12,13 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    animation: gradientAnimation 15s ease infinite;
 }
 
 
 .welcomeanimation{
-    font-size: 2em;
-    
+    font-size: 4em;
+    animation: fadeIn 3s ease-in-out infinite;
 }
 .iconlist{
     list-style-type: none;
@@ -26,12 +27,28 @@ body{
     margin-top: 70px;
 }
 .navicons{
-    height: 45px;
-    width: 45px;
-    padding: 0 10px 0 10px;
+    height: 55px;
+    width: 55px;
+    padding: 0 15px 0 10px;
   }
   
 .navicons:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+@keyframes fadeIn {
+    to {
+      opacity: 1; /* Fade in to full opacity */
+    }
+  }
